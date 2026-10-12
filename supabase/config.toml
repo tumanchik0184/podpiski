@@ -1,0 +1,6 @@
+# Минимальный конфиг для Supabase CLI (нужен для деплоя функции)
+project_id = "podpiski"
+
+[functions.send-reminders]
+# функцию вызывает cron с секретным заголовком, JWT не нужен
+verify_jwt = false
